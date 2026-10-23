@@ -4,4 +4,49 @@
 @media(min-width:1400px){.app{padding-top:20px}.intro{padding-top:60px}.game-layout{gap:80px}}
 @media(max-width:850px){.app{padding:0 26px}.game-layout{gap:30px;grid-template-columns:minmax(0,1fr) 220px}.settings{padding:20px 16px}.quiet-label{display:none}h1{font-size:39px}.intro-note{margin-right:5px}.cell{font-size:25px}.board-caption span:last-child{display:none}.number-key{font-size:23px}.number-pad{gap:4px}}
 @media(max-width:620px){.app{padding:0 max(18px,env(safe-area-inset-left)) 0 max(18px,env(safe-area-inset-right))}.header{height:78px;padding-top:env(safe-area-inset-top)}.brand{font-size:24px}.brand-symbol{font-size:29px}.header-right{gap:8px}.icon-button{width:35px;height:35px}.intro{padding:28px 0 24px}h1{font-size:33px;margin-top:11px;letter-spacing:-1.1px}.intro p{font-size:11px}.eyebrow{font-size:8px;letter-spacing:1.5px}.intro-note{display:none}.game-layout{display:flex;flex-direction:column;gap:15px}.play-area,.sidebar{width:100%}.game-meta{font-size:10px;margin-bottom:10px}.cell{font-size:clamp(20px,6vw,30px)}.board-caption{margin:12px 0 17px;font-size:9px}.board-caption span:last-child{display:block;font-size:6px;letter-spacing:.8px}.number-pad{gap:4px}.number-key{font-size:25px;padding:9px 0 6px;border-radius:6px}.tools{margin-top:17px}.tools button{padding:7px 10px;font-size:9px;gap:6px}.message{margin-top:13px;font-size:11px;min-height:29px}.sidebar{padding:0}.settings{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.settings .section-heading{grid-column:1/-1}.settings h2{font-size:22px;margin:12px 0 6px;grid-column:1/-1}.settings>p{grid-column:1/-1;margin-bottom:0}.settings .field-label{margin:20px 0 9px}.settings .field-label[for=difficulty]{grid-column:2;grid-row:4}.segmented{grid-column:1;grid-row:5}.settings select{grid-column:2;grid-row:5;align-self:stretch;padding:10px}.segmented button{padding:8px 4px}.segmented button span{font-size:8px;margin-top:4px}.settings>.primary{grid-column:1/-1;margin:16px 0 9px}.unique-note,.confirm-new{grid-column:1/-1}.little-note{display:none}.autosave{margin:15px 0 0;justify-content:center;border:0;padding:0;font-size:9px}footer{margin-top:25px;gap:14px;padding-bottom:calc(20px + env(safe-area-inset-bottom));font-size:8px}footer span:last-child{font-size:6px;text-align:right}.board-overlay h2{font-size:28px}}
+/* Rounded system typography, keeping the original wordmark intact. */
+:root{font-family:ui-rounded,'SF Pro Rounded',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.brand{font-family:Arial,Helvetica,sans-serif}
+h1{font-family:inherit;font-weight:650;letter-spacing:-2px;font-size:44px;line-height:1.15}
+.intro-note{font-family:inherit;font-size:12px;font-style:normal;font-weight:500;line-height:1.8;transform:none}
+.intro-note span{font-size:25px;font-weight:400}
+.intro p{font-size:13px;letter-spacing:-.1px}
+.settings{border-radius:20px;background:#eff0e7;border-color:#e0e3d6;padding:25px 22px}
+.settings h2{font-family:inherit;font-size:21px;font-weight:600;letter-spacing:-.7px;line-height:1.3}
+.settings>p{font-size:12px;line-height:1.7}
+.settings select{border-radius:12px;font-size:16px;padding:14px 12px}
+.segmented{border-radius:13px;padding:4px}
+.segmented button{font-family:inherit;font-size:17px;font-weight:600;border-radius:10px}
+.segmented button span{font-family:inherit;font-weight:400;font-size:10px}
+.primary{border-radius:13px;font-size:13px;font-weight:550;min-height:49px}
+.unique-note{font-size:9px}
+.board{border-color:#6d7862;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px #38412b07}
+.cell{font-family:inherit;font-weight:500;font-variant-numeric:tabular-nums;font-size:clamp(22px,2.6vw,30px)}
+.digit{display:inline-block;pointer-events:none;line-height:1;transform-origin:center}
+.notes-grid{font-family:inherit;font-weight:450}
+.cell.selected{box-shadow:inset 0 0 0 2px #718b5c}
+.number-key{font-family:inherit;font-size:25px;font-weight:550;border-radius:12px;padding:12px 0 8px;gap:5px;background:#eaede1}
+.number-key small{font-family:inherit;font-size:9px;font-weight:500}
+.number-key.complete{background:#dfe8d6;color:#547446;border-color:#cbd9be}
+.number-key.complete small{color:#547446}
+.tools button{border-radius:13px;font-weight:500;font-size:11px;min-height:55px}
+.message{font-family:inherit;font-style:normal;font-size:11px;font-weight:450;line-height:1.7}
+.little-note h3{font-family:inherit;font-size:24px;font-weight:600;letter-spacing:-.8px;line-height:1.25}
+.little-note p{font-size:12px}
+.little-note button{font-size:11px;font-weight:550}
+.board-overlay{border-radius:12px;background:#f6f4eef2}
+.board-overlay h2{font-family:inherit;font-size:30px;font-weight:650;letter-spacing:-1px}
+.board-overlay p{max-width:280px;line-height:1.8}
+.overlay-icon{font-family:inherit;border-radius:18px;background:#e7ecdd;border-color:#dce4ce;font-size:30px;width:64px;height:64px}
+.help-panel{border-radius:16px}
+.effects-layer{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:hidden;border-radius:12px;contain:paint;font-size:clamp(20px,2.6vw,30px)}
+.motion-settings{grid-column:1/-1}
+.motion-settings .field-label{margin:18px 0 9px}
+.motion-settings select{width:100%}
+.effect-tile{position:absolute;display:grid;place-items:center;border-radius:10px;font-family:inherit;font-weight:600;font-variant-numeric:tabular-nums;line-height:1;background:#dce9cc;color:#3a5e36;box-shadow:0 5px 16px #39502b20;will-change:transform,opacity}
+.effect-number{background:#446653;color:#fffdf6;z-index:2;box-shadow:0 7px 20px #385b3438}
+.spark{position:absolute;width:5px;height:9px;border-radius:3px;will-change:transform,opacity}
+.spark-star{width:11px;height:11px;clip-path:polygon(50% 0,61% 35%,100% 50%,61% 65%,50% 100%,39% 65%,0 50%,39% 35%)}
+@media(max-width:850px){h1{font-size:37px}.settings h2{font-size:20px}.number-key{font-size:23px}}
+@media(max-width:620px){h1{font-size:32px;letter-spacing:-1.25px}.intro{padding:28px 0 24px}.intro p{font-size:11px}.cell{font-size:clamp(20px,6vw,29px)}.number-key{font-size:23px;padding:11px 0 7px;border-radius:10px}.settings{padding:20px}.settings h2{font-size:22px}.segmented button{font-size:16px}.segmented button span{font-size:9px}.tools button{font-size:10px}.board-overlay h2{font-size:26px}.settings select{border-radius:11px}}
 @media(prefers-reduced-motion:reduce){button{transition:opacity 120ms ease}button:active{transform:none}.board.deal{animation:unit-glow 200ms ease}.celebrated{animation:unit-glow 200ms ease}}
